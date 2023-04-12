@@ -8,6 +8,8 @@ return require('packer').startup(function(use)
 			vim.cmd('colorscheme rose-pine')
 		end
 	})
+	use 'nvim-lualine/lualine.nvim'
+	use 'lukas-reineke/indent-blankline.nvim'
 	-- file nav
 	use({
 		'nvim-treesitter/nvim-treesitter',
@@ -24,9 +26,9 @@ return require('packer').startup(function(use)
 	use('theprimeagen/harpoon')
 	-- undo history vis
 	use('mbbill/undotree')
-	use 'nvim-lualine/lualine.nvim'
-	use 'lukas-reineke/indent-blankline.nvim'
+	-- comment toggles
 	use 'numToStr/Comment.nvim'
+	-- auto tab
 	use 'tpope/vim-sleuth'
 	-- fuzzy finder
 	use {
