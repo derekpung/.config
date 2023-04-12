@@ -55,7 +55,7 @@ bindsym $mod+Return exec WINIT_X11_SCALE_FACTOR=1 alacritty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -nb '#282828' -sf '#eeeeee' -sb '#689d6a' -nf '#bbbbbb'
+bindsym $mod+d exec --no-startup-id dmenu_run -nb '#191724' -sf '#e0def4' -sb '#eb6f92' -nf '#908caa'
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -188,9 +188,11 @@ default_border pixel 1
 default_floating_border pixel 1
 # browser
 bindsym $mod+Shift+w exec brave-beta
-# polybar
-exec_always ~/.config/polybar/launch.sh &
 # monitor setup
 exec_always ~/.screenlayout/homesetup.sh
+# polybar
+exec_always ~/.config/polybar/launch.sh &
+# open terminal on start
+exec_always WINIT_X11_SCALE_FACTOR=1 alacritty
 # lock
 bindsym $mod+x exec i3lock -c 000000 -n

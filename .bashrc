@@ -13,3 +13,5 @@ fi
 
 export PATH=$PATH:$HOME/.local/scripts
 bind '"\C-f": "tmux-sessionizer\n"'
+
+export EDITOR="nvim"
