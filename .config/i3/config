@@ -196,3 +196,5 @@ exec_always ~/.config/polybar/launch.sh &
 exec_always WINIT_X11_SCALE_FACTOR=1 alacritty
 # lock
 bindsym $mod+x exec i3lock -c 000000 -n
+# scratchnotes
+bindsym $mod+semicolon exec alacritty -e ~/.local/scripts/scratchnotes.sh
