@@ -197,4 +197,4 @@ exec_always WINIT_X11_SCALE_FACTOR=1 alacritty
 # lock
 bindsym $mod+x exec i3lock -c 000000 -n
 # scratchnotes
-bindsym $mod+semicolon exec alacritty -e ~/.local/scripts/scratchnotes.sh
+bindsym $mod+semicolon exec WINIT_X11_SCALE_FACTOR=1 alacritty -e ~/.local/scripts/scratchnotes.sh
